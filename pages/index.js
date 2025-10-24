@@ -6,7 +6,7 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navItems = ["Home", "About", "Products", "Contact"];
+  const navItems = ["Home", "About", "Portfolio", "Contact"];
 
   return (
     <div
@@ -28,7 +28,7 @@ export default function Home() {
               darkMode ? "text-pink-300 drop-shadow" : "text-pink-500"
             }`}
           >
-            Marva
+            Zahra 🌷
           </h1>
 
           {/* Desktop Menu */}
@@ -110,15 +110,15 @@ export default function Home() {
               : "text-pink-500"
           }`}
         >
-          Welcome to Marva Beauty 🌸
+          Hello, I'm Zahra 💫
         </h1>
         <p
           className={`max-w-lg mb-6 ${
             darkMode ? "text-gray-300" : "text-gray-600"
           }`}
         >
-          Soft, glowing, and confident — discover our collection of natural
-          beauty products designed for every skin tone.
+          Welcome to my personal space! I’m a creative and curious soul who loves
+          design, writing, and exploring new ideas. Get to know more about me below 🌸
         </p>
         <button
           className={`font-medium px-8 py-3 rounded-full shadow-lg transition ${
@@ -127,7 +127,7 @@ export default function Home() {
               : "bg-pink-400 hover:bg-pink-500 text-white"
           }`}
         >
-          Shop Now
+          Explore More
         </button>
       </section>
 
@@ -144,12 +144,12 @@ export default function Home() {
               darkMode ? "text-pink-300" : "text-pink-500"
             }`}
           >
-            About Us
+            About Me
           </h2>
           <div className="flex flex-col items-center gap-6">
             <img
               src="/cat3.jpeg"
-              alt="Marva"
+              alt="Zahra"
               className="w-36 h-36 object-cover rounded-full shadow-lg border-4 border-pink-200"
             />
             <p
@@ -157,17 +157,17 @@ export default function Home() {
                 darkMode ? "text-gray-300" : "text-gray-600"
               }`}
             >
-              Marva Beauty hadir untuk kamu yang ingin tampil natural, lembut,
-              dan percaya diri. Kami membuat produk dengan bahan alami terbaik,
-              agar kulitmu sehat dan bersinar sepanjang hari 🌷
+              Hi! I’m Zahra — a dreamer, learner, and creator. I enjoy combining
+              art and technology to make something beautiful and meaningful.
+              I’m passionate about personal growth, self-expression, and finding joy in small things 🌷
             </p>
           </div>
         </div>
       </section>
 
-      {/* 💅 PRODUCTS SECTION */}
+      {/* 💼 PORTFOLIO SECTION */}
       <section
-        id="products"
+        id="portfolio"
         className={`py-20 px-6 ${
           darkMode
             ? "bg-gradient-to-br from-gray-900 via-gray-800 to-pink-950"
@@ -180,12 +180,12 @@ export default function Home() {
               darkMode ? "text-pink-300" : "text-pink-500"
             }`}
           >
-            Our Products
+            My Works
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {["Body Lotion", "Face Cream", "Lip Balm"].map((product) => (
+            {["UI Design", "Writing", "Photography"].map((item) => (
               <div
-                key={product}
+                key={item}
                 className={`p-6 rounded-2xl shadow-md hover:shadow-lg transition ${
                   darkMode ? "bg-gray-900/70" : "bg-white"
                 }`}
@@ -200,14 +200,14 @@ export default function Home() {
                     darkMode ? "text-gray-100" : "text-gray-700"
                   }`}
                 >
-                  {product}
+                  {item}
                 </h3>
                 <p
                   className={`mt-2 text-sm ${
                     darkMode ? "text-gray-400" : "text-gray-500"
                   }`}
                 >
-                  Natural ingredients for radiant, glowing skin.
+                  A collection of my creative projects and favorite works.
                 </p>
               </div>
             ))}
@@ -229,9 +229,9 @@ export default function Home() {
             darkMode ? "text-pink-300" : "text-pink-500"
           }`}
         >
-          Contact Us
+          Get in Touch
         </h2>
-        <p className="mb-6">We’d love to hear from you 💌</p>
+        <p className="mb-6">I'd love to connect and collaborate 💌</p>
         <form className="max-w-md mx-auto">
           {["Your Name", "Your Email"].map((placeholder, i) => (
             <input
@@ -269,7 +269,7 @@ export default function Home() {
             darkMode ? "text-gray-400" : "text-gray-500"
           }`}
         >
-          © {new Date().getFullYear()} Marva Beauty. All rights reserved.
+          © {new Date().getFullYear()} Zahra. All rights reserved.
         </p>
       </footer>
     </div>
